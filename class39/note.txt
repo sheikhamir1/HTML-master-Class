@@ -1,0 +1,197 @@
+HTML <video> Element
+The <video> element is used to embed video content in a web page. It provides several attributes to control playback and appearance.
+
+Basic Syntax
+html
+Copy code
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+controls: Adds play, pause, and volume controls for the video.
+width and height: Define the size of the video player.
+Example
+html
+Copy code
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+Autoplay
+To start a video automatically, use the autoplay attribute.
+
+Example
+html
+Copy code
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+Note: Autoplay may be restricted in some browsers unless the video is muted.
+Example with Muted Autoplay
+html
+Copy code
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+Browser Support
+The <video> element is supported by most modern browsers. The table below shows the first version of popular browsers that fully support the <video> element.
+
+Element	Chrome	Firefox	Safari	Edge	Opera
+<video>	9.0	3.5	4.0	10.5	10.5
+Supported Video Formats
+The three supported video formats are MP4, WebM, and Ogg. Below is the browser support for these formats:
+
+Browser	MP4	WebM	Ogg
+Edge	YES	YES	YES
+Chrome	YES	YES	YES
+Firefox	YES	YES	YES
+Safari	YES	YES	NO
+Opera	YES	YES	YES
+Media Types
+Here are the media types for each file format:
+
+File Format	Media Type
+MP4	video/mp4
+WebM	video/webm
+Ogg	video/ogg
+HTML Video Methods, Properties, and Events
+The HTML DOM provides methods, properties, and events to control the video playback, including:
+
+Methods:
+
+play(): Starts video playback.
+pause(): Pauses the video.
+load(): Loads the video file.
+Properties:
+
+currentTime: Sets or returns the current playback position.
+duration: Returns the length of the video in seconds.
+Events:
+
+play: Triggered when the video starts playing.
+pause: Triggered when the video is paused.
+ended: Triggered when the video playback has ended.
+Example: Using JavaScript to Control Video
+html
+Copy code
+<video id="myVideo" width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<button onclick="document.getElementById('myVideo').play()">Play</button>
+<button onclick="document.getElementById('myVideo').pause()">Pause</button>
+HTML Video Tags
+Tag	Description
+<video>	Defines a video or movie
+<source>	Defines multiple media resources for video
+<track>	Defines text tracks (like subtitles) in media players
+The <video> element is a powerful and flexible way to embed video content in web pages, offering extensive control over playback and display options.
+
+
+
+
+HTML <audio> Element
+The <audio> element is used to embed audio content in a web page. It provides several attributes to control playback and appearance.
+
+Basic Syntax
+html
+Copy code
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+controls: Adds play, pause, and volume controls for the audio.
+The <source> elements allow you to specify multiple audio formats, enabling the browser to choose the best-supported format.
+Example
+html
+Copy code
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+Autoplay
+To start an audio file automatically, use the autoplay attribute.
+
+Example
+html
+Copy code
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+Note: Autoplay may be restricted in some browsers unless the audio is muted.
+Example with Muted Autoplay
+html
+Copy code
+<audio controls autoplay muted>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+Browser Support
+The <audio> element is supported by most modern browsers. The table below shows the first version of popular browsers that fully support the <audio> element.
+
+Element	Chrome	Firefox	Safari	Edge	Opera
+<audio>	9.0	3.5	4.0	10.5	10.5
+Supported Audio Formats
+The three supported audio formats are MP3, WAV, and OGG. Below is the browser support for these formats:
+
+Browser	MP3	WAV	OGG
+Edge/IE	YES	YES*	YES*
+Chrome	YES	YES	YES
+Firefox	YES	YES	YES
+Safari	YES	YES	NO
+Opera	YES	YES	YES
+*Note: WAV and OGG are supported in Edge starting from version 79.
+
+Media Types
+Here are the media types for each file format:
+
+File Format	Media Type
+MP3	audio/mpeg
+OGG	audio/ogg
+WAV	audio/wav
+HTML Audio - Methods, Properties, and Events
+The HTML DOM provides methods, properties, and events to control audio playback, including:
+
+Methods:
+
+play(): Starts audio playback.
+pause(): Pauses the audio.
+load(): Loads the audio file.
+Properties:
+
+currentTime: Sets or returns the current playback position.
+duration: Returns the length of the audio in seconds.
+Events:
+
+play: Triggered when the audio starts playing.
+pause: Triggered when the audio is paused.
+ended: Triggered when the audio playback has ended.
+Example: Using JavaScript to Control Audio
+html
+Copy code
+<audio id="myAudio" controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<button onclick="document.getElementById('myAudio').play()">Play</button>
+<button onclick="document.getElementById('myAudio').pause()">Pause</button>
+HTML Audio Tags
+Tag	Description
+<audio>	Defines sound content
+<source>	Defines multiple media resources for audio elements
+The <audio> element is a versatile and straightforward way to embed audio content in web pages, providing various controls for user interaction and playback options.

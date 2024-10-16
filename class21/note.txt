@@ -1,0 +1,174 @@
+Introduction:
+You can use CSS to enhance the visual appearance of HTML tables. Some common styling techniques include zebra stripes, hover effects, and borders.
+
+Zebra Stripes:
+Zebra stripes involve alternating the background color of rows or columns to improve table readability.
+
+Example: Styling every other row (horizontal zebra stripes)
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+This will apply the specified background color to every even row (rows 2, 4, 6, etc.). You can use nth-child(odd) to apply the style to odd-numbered rows instead (1, 3, 5, etc.).
+
+Vertical Zebra Stripes:
+You can also create vertical zebra stripes by styling every other column.
+
+Example: Styling every other column
+
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+This applies the background color to every even column (columns 2, 4, 6, etc.) for both header cells (th) and data cells (td).
+
+Combining Vertical and Horizontal Zebra Stripes:
+You can apply both horizontal and vertical stripes at the same time. Using transparent colors, you can create an overlapping effect.
+
+Example: Combining horizontal and vertical zebra stripes with transparency
+css
+Copy code
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even), td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+In this example, an rgba() value is used to add transparency to the background color.
+
+Horizontal Dividers:
+You can create horizontal dividers between rows by adding a border only to the bottom of each row.
+
+Example: Adding horizontal dividers
+css
+Copy code
+tr {
+  border-bottom: 1px solid #ddd;
+}
+This adds a light grey border between each row for a clean divider effect.
+
+Hoverable Table Rows:
+To highlight a table row when the mouse hovers over it, use the :hover selector on the tr element.
+
+Example: Hover effect on table rows
+css
+Copy code
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+This will change the background color of a row when a user hovers over it, making it more interactive.
+
+By using these styling techniques, you can make your HTML tables more visually engaging and easier to read, enhancing the user experience.
+
+exampleOne- 
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Zebra Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+exampleTwo -
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+

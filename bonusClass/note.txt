@@ -1,0 +1,142 @@
+HTML Versus XHTML
+
+XHTML (Extensible HyperText Markup Language) is a stricter and more XML-based version of HTML. It was developed to enforce cleaner, well-formed markup while also making it easier to integrate with other XML-based technologies.
+
+What is XHTML?
+XHTML stands for Extensible HyperText Markup Language.
+It is a stricter and more XML-compliant version of HTML.
+XHTML is essentially HTML defined as an XML application.
+XHTML is supported by all major web browsers.
+Why Use XHTML?
+XHTML ensures that documents are well-formed, adhering to stricter rules of XML syntax.
+It is designed to be more extensible and flexible to work with other XML data formats.
+Unlike HTML, which can be forgiving about errors, XHTML requires that the markup is error-free and well-structured.
+If you're interested in learning more about XML, you can check out the XML Tutorial.
+
+Key Differences Between HTML and XHTML
+DOCTYPE is Mandatory
+In XHTML, the <!DOCTYPE> declaration is mandatory to define the document type.
+
+The xmlns Attribute in <html> is Mandatory
+The xmlns attribute specifies the XML namespace for the document.
+
+Mandatory Elements
+The <html>, <head>, <title>, and <body> elements must always be present in XHTML.
+
+Proper Nesting of Elements
+Elements must always be properly nested in XHTML. For example:
+
+
+Correct: <b><i>Some text</i></b>
+Incorrect: <b><i>Some text</b></i>
+All Elements Must be Closed
+All elements, including empty elements, must have a closing tag.
+
+Correct: <p>This is a paragraph</p>
+Incorrect: <p>This is a paragraph
+Empty Elements Must be Closed
+Empty elements must always include a closing slash (/).
+
+Correct: <br />, <hr />, <img src="happy.gif" alt="Happy face" />
+Incorrect: <br>, <hr>, <img src="happy.gif" alt="Happy face">
+Lowercase Element Names
+All element names in XHTML must be in lowercase.
+
+Correct: <body>, <p>This is a paragraph</p>
+Incorrect: <BODY>, <P>This is a paragraph</P>
+Lowercase Attribute Names
+Attribute names must also be in lowercase.
+
+Correct: <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+Incorrect: <a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+Quoted Attribute Values
+Attribute values must always be enclosed in quotes.
+
+Correct: <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+Incorrect: <a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+Attribute Minimization is Forbidden
+In XHTML, you cannot minimize attributes by leaving them unquoted or omitting their values.
+
+Correct: <input type="checkbox" name="vehicle" value="car" checked="checked" />
+Incorrect: <input type="checkbox" name="vehicle" value="car" checked />
+Example of XHTML Document
+Here’s an example of a basic XHTML document with the necessary structure and syntax:
+
+html
+Copy code
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Title of document</title>
+</head>
+<body>
+  <p>This is some content in an XHTML document.</p>
+</body>
+</html>
+Proper Nesting of XHTML Elements
+In XHTML, elements must be properly nested. For example:
+
+Correct:
+html
+Copy code
+<b><i>Some text</i></b>
+Incorrect:
+html
+Copy code
+<b><i>Some text</b></i>
+Closing Tags in XHTML
+All elements must be closed, including empty elements. For example:
+
+Correct:
+html
+Copy code
+<br />
+<hr />
+<img src="image.jpg" alt="An image" />
+Incorrect:
+html
+Copy code
+<br>
+<hr>
+<img src="image.jpg" alt="An image">
+Lowercase Element and Attribute Names
+In XHTML, both element and attribute names must be written in lowercase:
+
+Correct:
+html
+Copy code
+<body>
+  <p>This is a paragraph</p>
+</body>
+Incorrect:
+html
+Copy code
+<BODY>
+  <P>This is a paragraph</P>
+</BODY>
+Attribute Quoting
+All attribute values must be enclosed in quotes:
+
+Correct:
+html
+Copy code
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+Incorrect:
+html
+Copy code
+<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+No Attribute Minimization in XHTML
+In XHTML, attributes cannot be minimized. This means you must explicitly set attributes like checked or disabled with values:
+
+Correct:
+html
+Copy code
+<input type="checkbox" name="vehicle" value="car" checked="checked" />
+<input type="text" name="lastname" disabled="disabled" />
+Incorrect:
+html
+Copy code
+<input type="checkbox" name="vehicle" value="car" checked />
+<input type="text" name="lastname" disabled />
+XHTML imposes stricter rules than HTML, ensuring better compatibility, cleaner markup, and future extensibility with XML. By following these rules, XHTML documents are more reliable and work seamlessly across all browsers.

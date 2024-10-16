@@ -1,0 +1,67 @@
+HTML Block-Level Elements:
+Block-level elements start on a new line.
+These elements take up the full width available, stretching from the left to the right.
+Browsers automatically add margins (space) before and after block-level elements.
+Common block-level elements include:
+
+<p>: Defines a paragraph.
+<div>: Defines a division or section.
+Example: Block-level Elements
+
+
+<p>Hello World</p>
+<div>Hello World</div>
+List of Block-Level Elements:
+
+
+
+<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, 
+<dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, 
+<h1> to <h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, 
+<p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+
+HTML Inline Elements:
+Inline elements do not start on a new line.
+They only take up as much space as necessary for their content.
+Inline elements can be used to mark small sections of text, such as words or phrases.
+Example: Inline Element
+
+
+<span>Hello World</span>
+List of Inline Elements:
+
+
+
+<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, 
+<code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, 
+<object>, <output>, <q>, <samp>, <script>, <select>, <small>, <span>, 
+<strong>, <sub>, <sup>, <textarea>, <time>, <tt>, <var>
+Note: Inline elements cannot contain block-level elements.
+
+The <div> Element:
+The <div> element is a block-level container often used to group other elements.
+It is commonly used with CSS to style blocks of content.
+Example: Styling with <div>
+
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England...</p>
+</div>
+The <span> Element:
+The <span> element is an inline container used to mark up small parts of text or a document.
+Commonly used with CSS to style parts of the text.
+Example: Styling with <span>
+
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes...</p>
+Chapter Summary:
+Block-level elements start on a new line and take up the full width available.
+Inline elements do not start on a new line and only take up as much space as needed.
+The <div> element is a block-level container commonly used for grouping elements.
+The <span> element is an inline container used for marking up small parts of text or documents.
+
+
+
+
+

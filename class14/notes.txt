@@ -1,0 +1,57 @@
+Introduction:
+The <picture> element provides flexibility in displaying different images based on the device or screen size. It allows for more efficient image selection, optimizing performance and user experience.
+
+HTML <picture> Element:
+The <picture> element is used to offer multiple image sources, allowing the browser to choose the most appropriate one based on the device or screen size. It includes:
+
+One or more <source> elements with different image resources specified via the srcset attribute.
+A fallback <img> element for browsers that do not support the <picture> element or for situations where none of the sources match.
+
+Example (Different images for different screen sizes):
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+Note: Always include an <img> element as the last child of <picture>. It serves as a fallback for browsers that do not support <picture> or if none of the <source> elements match.
+
+When to Use the <picture> Element:
+There are two key reasons to use the <picture> element:
+
+1. Bandwidth Optimization:
+For small screens or devices, loading large images is unnecessary. The browser selects the first <source> element with matching attributes and ignores the rest, reducing bandwidth usage.
+2. Format Support:
+Not all browsers and devices support all image formats. With <picture>, you can provide multiple formats, and the browser will choose the first one it supports.
+
+Example (Format Support):
+This example demonstrates how the browser selects the first format it supports:
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+Note: The browser will use the first <source> element with matching attributes, ignoring any following ones.
+
+Exercise:
+Question: One of these is NOT a legal HTML element. Which one is it?
+
+<image>
+<picture>
+<source>
+HTML Image Tags:
+<img>: Defines an image.
+<picture>: Defines a container for multiple image resources.
+For more HTML tags, refer to the HTML Tag Reference.
+
+Chapter Summary:
+The <picture> element enables developers to specify different images for different devices and screen sizes.
+Use the <source> element to specify multiple image resources.
+Always include an <img> element as a fallback for unsupported browsers or unmatched source tags.
+Use the <picture> element to optimize image loading for bandwidth and format compatibility.
+
+
+
+
+

@@ -1,0 +1,118 @@
+HTML Forms
+
+HTML forms are essential for collecting user input, which is typically sent to a server for processing.
+
+Example Form:
+
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+This form collects a user's first and last names and sends the data to a server-side script for processing when submitted.
+
+The <form> Element
+The <form> element creates an HTML form for user input. It acts as a container for input elements such as text fields, checkboxes, radio buttons, and submit buttons:
+
+
+
+<form>
+  <!-- form elements go here -->
+</form>
+The different types of form elements are covered in detail in the chapter on HTML Form Elements.
+
+The <input> Element
+The <input> element is the most commonly used form element. The type attribute determines the type of input field:
+
+Type	Description
+<input type="text">	Single-line text input field
+<input type="radio">	Radio button for selecting one of many choices
+<input type="checkbox">	Checkbox for selecting zero or more options
+<input type="submit">	Submit button for submitting the form
+<input type="button">	Clickable button
+Different input types are covered in the chapter on HTML Input Types.
+
+Text Fields
+The <input type="text"> element creates a single-line input field for text input:
+
+
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+This code creates a form where users can input their first and last names.
+
+The <label> Element
+The <label> element defines labels for form elements, making forms more accessible. When using <label>, you should associate it with the corresponding <input> element using the for attribute:
+
+
+
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+This helps screen readers, as they read out the label when the user focuses on the input field. It also makes radio buttons and checkboxes easier to click, as clicking the label will also toggle the associated input.
+
+Radio Buttons
+Radio buttons let users select one option from a set of choices. The <input type="radio"> element defines a radio button:
+
+
+
+<p>Choose your favorite Web language:</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+This form allows the user to select one preferred web language: HTML, CSS, or JavaScript.
+
+Checkboxes
+Checkboxes allow users to select zero or more options from a list. The <input type="checkbox"> element defines a checkbox:
+
+
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">I have a boat</label>
+</form>
+
+This form allows users to select whether they have a bike, car, or boat (or any combination).
+
+Submit Button
+The <input type="submit"> element defines a button that submits the form data to a server for processing. The server-side form handler is typically specified using the action attribute of the <form> element:
+
+
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+The name Attribute for <input>
+Each input field must have a name attribute to ensure that its value is sent to the server when the form is submitted. Without the name attribute, the input's value will not be included in the form data.
+
+Example of a form without a name attribute (won't submit the first name):
+
+
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+HTML forms are a key way to collect and send user input to a server for processing, and various form elements like text fields, checkboxes, and buttons offer flexibility for user interactions.

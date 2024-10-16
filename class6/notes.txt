@@ -1,0 +1,39 @@
+HTML comments are useful for adding notes or documentation to your HTML code. They are not displayed in the browser but help organize and explain code.
+
+1. Comment Syntax
+The syntax for an HTML comment is:
+<!-- Write your comments here -->
+The comment starts with <!-- and ends with -->.
+
+2. Adding Comments
+Comments can be used to add notes or reminders in the code without affecting the browser's output.
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Remember to add more information here -->
+
+3. Hiding Content
+You can use comments to hide parts of your code, which is helpful when you want to temporarily remove content without deleting it.
+<p>This is a paragraph.</p>
+<!-- <p>This is another paragraph</p> -->
+<p>This is a paragraph too.</p>
+Everything between <!-- and --> is hidden.
+
+4. Hiding Sections of HTML
+You can hide multiple lines or sections of code.
+<p>This is a paragraph.</p>
+<!--
+<p>Look at this cool image:</p>
+<img src="pic_trulli.jpg" alt="Trulli">
+-->
+<p>This is a paragraph too.</p>
+Useful for debugging by temporarily removing sections to identify errors.
+
+5. Hiding Inline Content
+You can also hide content within a line of HTML.
+<p>This <!-- great text --> is a paragraph.</p>
+
+
+Chapter Summary:
+Use <!-- --> to add comments in HTML code.
+Comments are not displayed in the browser but are helpful for documenting code.
+You can hide content using comments for debugging or temporarily removing sections of code.

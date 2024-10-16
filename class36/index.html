@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class36</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" />
+    </form>
+    <hr />
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <hr />
+
+    <select id="cars" name="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <hr />
+
+    <label for="massage">type a massage</label><br />
+    <textarea name="massage" id="massage" rows="5" cols="30">
+this is textarea</textarea
+    >
+
+    <button type="button" onclick="alert('form submit successfully')">
+      Click Me!
+    </button>
+
+    <hr />
+
+    <form>
+      <fieldset>
+        <legend>send user data:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <hr />
+
+    <input list="browsers" name="browser" />
+    <datalist id="browsers">
+      <option value="Edge"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
+    </datalist>
+
+    <hr />
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" name="a" value="0" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="result"></output>
+    </form>
+  </body>
+</html>

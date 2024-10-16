@@ -1,0 +1,29 @@
+HTML headings are used to create titles and subtitles on a webpage. They are defined using the <h1> to <h6> tags, with <h1> being the most important and <h6> the least important.
+
+1. Heading Example
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<h1> is for the main heading.
+<h6> is for the least important heading.
+
+2. Headings & Structure
+Headings are important for SEO (search engine optimization) as they help search engines index content and structure. Users also rely on headings to quickly navigate a page. Use headings in a logical hierarchy (e.g., <h1> for the main title, <h2> for subsections).
+
+3. Styling Headings
+The size of headings can be customized using the style attribute with the CSS font-size property.
+
+<h1 style="font-size:60px;">Heading 1</h1>
+
+4. Tips
+Use headings only for structuring content, not just for making text big or bold.
+Browsers automatically add margin around headings for spacing.
+
+
+Tag Reference:
+<html>: Defines the root of an HTML document.
+<body>: Defines the body of the webpage.
+<h1> to <h6>: Defines headings with different levels of importance.

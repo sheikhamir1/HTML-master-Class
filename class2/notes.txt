@@ -1,0 +1,33 @@
+HTML attributes provide extra information about elements. They are specified in the start tag and typically come in name/value pairs like name="value".
+
+1. href Attribute
+Specifies the URL for a hyperlink in the <a> tag.
+<a href="https://www.google.com">Visit W3Schools</a>
+
+2. src Attribute
+Specifies the path to an image in the <img> tag.
+<img src="img_girl.jpg">
+
+3. width and height Attributes
+Define the size of an image in pixels.
+<img src="img_girl.jpg" width="500" height="600">
+
+4. alt Attribute
+Provides alternate text if an image can't be displayed.
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+5. style Attribute
+Adds inline styles to an element.
+<p style="color:red;">This is a red paragraph.</p>
+
+6. lang Attribute
+Declares the language of the web page.
+<html lang="en">
+
+7. title Attribute
+Displays extra information as a tooltip when you hover over an element.
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+Tips:
+Always use lowercase for attribute names.
+Always quote attribute values, preferably with double quotes.

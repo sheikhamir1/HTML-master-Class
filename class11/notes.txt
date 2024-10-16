@@ -1,0 +1,111 @@
+What is CSS?:
+CSS (Cascading Style Sheets) is used to format the layout of a webpage.
+It controls colors, fonts, text size, spacing, element positioning, background images/colors, and more.
+Cascading means styles applied to a parent element are inherited by all child elements (unless overridden).
+
+Using CSS:
+CSS can be added to HTML in three ways:
+
+Inline CSS – Uses the style attribute inside HTML elements to apply styles to specific elements.
+Internal CSS – Defined inside a <style> element in the <head> section of an HTML document, applies to the whole page.
+External CSS – Links to a separate CSS file using the <link> element, allowing styles to be applied to multiple pages.
+
+Example (Inline CSS):
+<h1 style="color:blue;">A Blue Heading</h1>
+<p style="color:red;">A Red Paragraph</p>
+
+Example (Internal CSS):
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {background-color: powderblue;}
+  h1 {color: blue;}
+  p {color: red;}
+</style>
+</head>
+<body>
+  <h1>This is a Heading</h1>
+  <p>This is a Paragraph.</p>
+</body>
+</html>
+
+Example (External CSS):
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>This is a Heading</h1>
+  <p>This is a Paragraph.</p>
+</body>
+</html>
+
+External CSS File (styles.css):
+
+body {background-color: powderblue;}
+h1 {color: blue;}
+p {color: red;}
+
+Tip: With external CSS, you can update the look of an entire site by changing one file.
+
+CSS Colors, Fonts, and Sizes:
+CSS color property: Defines text color.
+CSS font-family property: Defines the font used.
+CSS font-size property: Defines the text size.
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  h1 {color: blue; font-family: verdana; font-size: 300%;}
+  p {color: red; font-family: courier; font-size: 160%;}
+</style>
+</head>
+<body>
+  <h1>This is a Heading</h1>
+  <p>This is a Paragraph.</p>
+</body>
+</html>
+
+CSS Borders, Padding, and Margin:
+CSS border property: Defines a border around HTML elements.
+CSS padding property: Adds space between the text and the border.
+CSS margin property: Adds space outside the border.
+
+Example (CSS border):
+p {
+  border: 2px solid powderblue;
+}
+Example (CSS padding):
+css
+Copy code
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+Example (CSS margin):
+css
+Copy code
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+
+Linking External CSS:
+You can link to an external CSS file using a full URL or a relative path.
+
+Example (Full URL):
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+Example (Relative Path):
+<link rel="stylesheet" href="/html/styles.css">
+
+
+Chapter Summary:
+Use the style attribute for inline styling.
+Use the <style> element for internal CSS.
+Use the <link> element for external CSS files.
+Use the color, font-family, font-size, border, padding, and margin properties to style elements.

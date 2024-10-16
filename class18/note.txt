@@ -1,0 +1,83 @@
+Introduction:
+HTML tables can be customized to have different sizes for the entire table, individual rows, or specific columns. This is done using the style attribute with the width and height properties.
+
+HTML Table Width:
+To adjust the width of an entire table, add the style attribute with the width property to the <table> element.
+
+Example:
+Set the width of the table to 100% of the parent element (usually the <body>):
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+In this case, the table will span the full width of the page or its parent container.
+
+HTML Table Column Width:
+You can control the width of individual columns by adding the style attribute with the width property to specific <th> or <td> elements.
+
+Example:
+Set the width of the first column to 70%:
+
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+In this example, the first column will occupy 70% of the table width, while the rest is distributed among the other columns.
+
+HTML Table Row Height:
+You can also control the height of specific rows by adding the style attribute with the height property to a <tr> element.
+
+Example:
+Set the height of the second row to 200 pixels:
+
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+In this example, the second row will have a height of 200 pixels, making it taller than the other rows.
+
+By using the width and height properties, you can fine-tune the appearance of HTML tables to match your design requirements.

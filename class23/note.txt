@@ -1,0 +1,119 @@
+Unordered HTML List:
+An unordered list is defined using the <ul> tag, and each list item is enclosed in an <li> tag. By default, unordered lists display with bullet points.
+
+Example: Unordered list with default bullets
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+Choosing List Item Marker:
+The appearance of list item markers (bullets) can be customized using the CSS list-style-type property. The common values for this property are:
+
+disc (default): Bullet markers
+circle: Circle markers
+square: Square markers
+none: No markers
+
+Example: Disc marker (default)
+
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+Example: Circle marker
+
+
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Example: Square marker
+
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+Example: No markers
+
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Nested HTML Lists:
+HTML lists can be nested within other lists. A list item (<li>) can contain another list, allowing for hierarchical structures.
+
+Example: Nested list
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+In this example, "Black tea" and "Green tea" are nested inside the "Tea" list item.
+
+Horizontal List with CSS:
+Lists can be styled to display horizontally, commonly used for navigation menus. This is achieved using CSS by floating the list items.
+
+Example: Horizontal navigation list
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+In this example, list items are displayed horizontally using float: left; and styled for a navigation menu.
+
+Chapter Summary:
+The <ul> element is used to define an unordered list.
+The CSS list-style-type property is used to set the list item marker style.
+The <li> element defines each item in the list.
+Lists can be nested inside other lists.
+The CSS property float: left; can be used to display a list horizontally.

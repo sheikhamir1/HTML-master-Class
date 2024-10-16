@@ -1,0 +1,128 @@
+What is the id Attribute?
+The HTML id attribute is used to assign a unique identifier to an HTML element.
+You cannot have more than one element with the same id within an HTML document.
+Using the id Attribute
+The id attribute is used to point to a specific style in a style sheet or to interact with JavaScript.
+The value of the id must be unique within the HTML document.
+Example: Applying id with CSS
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+
+
+Syntax for id in CSS
+To target an element with an id in CSS, use a hash character (#) followed by the id name, then define the CSS properties within curly braces {}.
+
+Example:
+
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+Important Notes about the id Attribute
+The id name is case sensitive.
+The id value must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+Difference Between class and id
+Class: A class name can be shared by multiple elements.
+Id: An id must be unique and can only be used by one element within the document.
+Example: Difference Between class and id
+
+
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with the same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+Result:
+
+The #myHeader applies styling to only the <h1> element.
+The .city class applies styling to multiple elements (e.g., <h2> and <p>).
+
+HTML Bookmarks Using id and Links
+HTML bookmarks allow users to jump to specific parts of a webpage.
+You create a bookmark by adding the id attribute to an element, and then link to that id either from within the same page or from another page.
+
+Example: Creating and Using a Bookmark
+Create a bookmark:
+
+<h2 id="C4">Chapter 4</h2>
+Link to the bookmark from the same page:
+
+
+<a href="#C4">Jump to Chapter 4</a>
+Link to the bookmark from another page:
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+
+Using the id Attribute with JavaScript
+JavaScript can access an element with a specific id using the getElementById() method.
+Example: JavaScript Manipulating an Element by id
+
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+<h1 id="myHeader">My Header</h1>
+<button onclick="displayResult()">Click Me</button>
+
+
+Chapter Summary:
+The HTML id attribute specifies a unique id for an HTML element.
+The id value must be unique within the HTML document.
+The id attribute is used by CSS and JavaScript to style or select a specific element.
+The value of the id attribute is case sensitive.
+The id attribute can be used to create HTML bookmarks.
+JavaScript can access an element with a specific id using the getElementById() method.
+
+
+
+
+

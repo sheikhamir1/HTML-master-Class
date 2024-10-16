@@ -1,0 +1,130 @@
+What is the class Attribute?
+The HTML class attribute is used to assign a class to an element.
+Multiple HTML elements can share the same class.
+The class attribute is often used to apply CSS styles or interact with JavaScript.
+Using the class Attribute with CSS
+The class attribute is used to point to a class name defined in a style sheet.
+Example: Applying Class to Multiple Elements
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+
+Using the class Attribute with Inline Elements
+The class attribute can also be applied to inline elements, such as <span>.
+Example: Class Applied to <span> Elements
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+The class Attribute Syntax
+To create a class in CSS, write a period (.) followed by the class name.
+Example: Defining a CSS Class
+
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+To apply the class, use the class attribute in HTML elements:
+
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+Multiple Classes on a Single Element
+HTML elements can belong to multiple classes. Separate class names with a space.
+
+Example: Multiple Classes
+
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+The <h2> element for "London" belongs to both "city" and "main" classes and will receive styles from both classes.
+Sharing Classes Across Different Elements
+Multiple HTML elements (e.g., <h2>, <p>) can share the same class.
+Example: Different Elements Sharing the Same Class
+
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+Using the class Attribute with JavaScript
+JavaScript can access elements by their class name using getElementsByClassName() method.
+Example: JavaScript Hiding Elements by Class
+
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<button onclick="myFunction()">Hide Cities</button>
+The above JavaScript will hide all elements with the "city" class when the button is clicked.
+
+
+Chapter Summary:
+The HTML class attribute specifies one or more class names for an element.
+Classes are used by CSS to apply styles and by JavaScript to access elements.
+The class attribute can be applied to any HTML element.
+Class names are case-sensitive.
+Different HTML elements can share the same class name.
+JavaScript can access elements by their class name using the getElementsByClassName() method.

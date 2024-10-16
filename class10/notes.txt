@@ -1,0 +1,61 @@
+HSL Colors:
+HSL stands for Hue, Saturation, and Lightness.
+The format for specifying HSL colors in HTML is: hsl(hue, saturation, lightness).
+Hue is a degree on the color wheel (0–360), where:
+
+0 = Red
+120 = Green
+240 = Blue
+
+Saturation is a percentage (0% to 100%), where:
+0% = gray
+100% = full color
+
+Lightness is a percentage (0% to 100%), where:
+
+0% = black
+100% = white
+
+Example:
+<h1 style="color:hsl(0, 100%, 50%);">Red</h1> 
+<h1 style="color:hsl(240, 100%, 50%);">Blue</h1> 
+<h1 style="color:hsl(120, 100%, 50%);">Green</h1> 
+
+Saturation:
+Saturation determines how much gray is mixed into the color.
+100% = pure color, no gray.
+0% = completely gray.
+
+Example:
+
+<h1 style="color:hsl(0, 100%, 50%);">Red (100% Saturation)</h1>
+<h1 style="color:hsl(0, 50%, 50%);">Red (50% Saturation)</h1>
+<h1 style="color:hsl(0, 0%, 50%);">Gray (0% Saturation)</h1>
+
+Lightness:
+Lightness defines how much light is in the color.
+0% = black (no light).
+100% = white (full light).
+Example:
+
+<h1 style="color:hsl(0, 100%, 0%);">Black</h1>
+<h1 style="color:hsl(0, 100%, 50%);">Red (50% Lightness)</h1>
+<h1 style="color:hsl(0, 100%, 100%);">White</h1>
+
+Shades of Gray:
+Set hue and saturation to 0, then adjust lightness to get different shades of gray.
+Example:
+
+<h1 style="color:hsl(0, 0%, 20%);">Dark Gray</h1>
+<h1 style="color:hsl(0, 0%, 50%);">Medium Gray</h1>
+<h1 style="color:hsl(0, 0%, 80%);">Light Gray</h1>
+
+HSLA Colors:
+HSLA is an extension of HSL, where A (alpha) controls opacity.
+The format for specifying HSLA colors is: hsla(hue, saturation, lightness, alpha).
+Alpha defines the opacity (0 = fully transparent, 1 = fully opaque).
+Example:
+
+<h1 style="color:hsla(0, 100%, 50%, 0.5);">Red (50% Opacity)</h1>
+<h1 style="color:hsla(240, 100%, 50%, 0.7);">Blue (70% Opacity)</h1>
+<h1 style="color:hsla(120, 100%, 50%, 1);">Green (100% Opacity)</h1>

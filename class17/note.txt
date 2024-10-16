@@ -1,0 +1,99 @@
+Introduction:
+HTML tables can have customized borders using CSS to enhance their visual appearance. You can define various styles, colors, and shapes for the table borders.
+
+How to Add a Border:
+To add a border to a table, use the border CSS property on the <table>, <th>, and <td> elements.
+
+Example:
+
+table, th, td {
+  border: 1px solid black;
+}
+
+This example adds a solid black border around the table, its headers, and data cells.
+
+Collapsed Table Borders:
+By default, HTML tables will have double borders between cells. To collapse these into a single border, use the border-collapse property.
+
+Example:
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+This collapses the borders into one, creating a more compact and clean appearance.
+
+Style Table Borders:
+You can style table borders to make them appear invisible by setting the border color to match the document's background. Here, white is used as the border color, and the cells are given a background color.
+
+Example:
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  background-color: #96D4D4;
+}
+
+This example creates a table where the borders seem invisible because they match the background, but the cells have a light blue color.
+
+Round Table Borders:
+The border-radius property can be used to round the corners of table borders.
+
+Example:
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+This adds rounded corners to both the table and the individual table cells.
+
+Tip: To apply rounded borders only to the table cells and not the table itself, leave out the table selector.
+
+Example:
+
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+Dotted Table Borders:
+With the border-style property, you can specify various border styles like dotted, dashed, solid, and more.
+
+Example:
+
+th, td {
+  border-style: dotted;
+}
+
+This creates a dotted border around each table header and data cell.
+
+
+Supported Border Styles:
+
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+none
+hidden
+Border Color:
+You can set the border color using the border-color property.
+
+Example:
+
+th, td {
+  border-color: #96D4D4;
+}
+
+This example applies a light blue border color to the table headers and data cells.
+
+By using CSS, you can create custom table borders that align with your webpage's design, adding both functionality and aesthetics to your tables.

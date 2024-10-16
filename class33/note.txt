@@ -1,0 +1,180 @@
+HTML Semantic Elements
+
+Semantic elements are HTML elements that carry meaning both for the browser and for developers. They describe the content inside them, making it more accessible and easier to understand.
+
+What are Semantic Elements?
+Semantic elements clearly define their purpose and the type of content they contain, unlike non-semantic elements such as <div> or <span>, which do not convey any meaning about their content.
+
+Examples of Semantic Elements:
+<form>
+<table>
+<article>
+Examples of Non-Semantic Elements:
+<div>
+<span>
+Common Semantic Elements in HTML
+Websites often use semantic elements like <nav>, <header>, and <footer> to indicate navigation, headers, and footers. These elements make the structure of the page more meaningful.
+
+Some Common HTML5 Semantic Elements:
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+HTML <section> Element
+The <section> element is used to group content thematically. Each section should ideally have a heading to describe its content.
+
+Example:
+
+
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on conservation, research, and restoration of the environment.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda Symbol</h1>
+  <p>The panda logo of WWF originated from a panda named Chi Chi, transferred from the Beijing Zoo to the London Zoo in 1961.</p>
+</section>
+HTML <article> Element
+The <article> element represents a self-contained piece of content that can be distributed independently, like blog posts, news articles, or comments.
+
+Example:
+
+
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. It's the world's most popular web browser today.</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. It has been the second most popular web browser since 2018.</p>
+</article>
+Styling <article> Elements with CSS
+You can style the <article> element for better presentation.
+
+Example:
+
+
+<html>
+<head>
+<style>
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+.browser {
+  background: white;
+}
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
+</head>
+<body>
+
+<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. It’s the world's most popular web browser today!</p>
+  </article>
+  <article class="browser">
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since 2018.</p>
+  </article>
+</article>
+
+</body>
+</html>
+HTML <header> Element
+The <header> element represents a container for introductory content or navigation links. It typically includes heading elements, logos, or other header information.
+
+Example:
+
+
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF’s mission is to stop the degradation of our planet’s natural environment and build a future where humans live in harmony with nature.</p>
+</article>
+
+HTML <footer> Element
+The <footer> element defines the footer of a document or section. It usually contains metadata about the document such as authorship, copyright, or related links.
+
+Example:
+
+
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+HTML <nav> Element
+The <nav> element is used to group major navigation links.
+
+Example:
+
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+HTML <aside> Element
+The <aside> element defines content indirectly related to the main content, often used for sidebars or additional info.
+
+Example:
+
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring attractions and events.</p>
+</aside>
+HTML <figure> and <figcaption> Elements
+The <figure> element represents self-contained content like images or diagrams, while <figcaption> provides a caption for that content.
+
+Example:
+
+
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+Why Use Semantic Elements?
+Using semantic elements helps search engines and other tools better understand the structure and content of web pages. This improves accessibility, SEO, and makes code easier to maintain.
+
+Common HTML5 Semantic Tags:
+Tag	Description
+
+<article>	Defines independent, self-contained content
+<aside>	Defines content aside from the main content
+<footer>	Defines a footer for a document or section
+<header>	Specifies a header for a document or section
+<nav>	Defines navigation links
+<section>	Defines a section in a document
+<figure>	Specifies self-contained content like images or diagrams
+<figcaption>	Defines a caption for a <figure>
+
+
+
+
+

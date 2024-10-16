@@ -1,0 +1,93 @@
+
+HTML Form Attributes
+
+This chapter describes the various attributes for the HTML <form> element, which control how the form behaves and how data is submitted.
+
+The action Attribute
+The action attribute defines where the form data is sent when the user submits the form. Typically, it points to a server-side script that processes the data.
+
+Example:
+When the form is submitted, data is sent to "action_page.php":
+
+
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+Tip: If the action attribute is omitted, the form will submit data to the same page.
+
+The target Attribute
+The target attribute specifies where to display the response after submitting the form. It has the following values:
+
+Value	Description
+_blank	Opens the response in a new tab or window
+_self	Opens the response in the current window (default)
+_parent	Opens the response in the parent frame
+_top	Opens the response in the full body of the window
+framename	Opens the response in a named iframe
+Example:
+Submitting the form opens the result in a new tab:
+
+
+
+<form action="/action_page.php" target="_blank">
+The method Attribute
+
+The method attribute specifies the HTTP method used to send the form data. The options are GET and POST.
+
+GET: Appends form data to the URL as name/value pairs.
+POST: Sends form data within the HTTP request body.
+GET Method Example:
+
+
+
+<form action="/action_page.php" method="get">
+POST Method Example:
+
+
+
+<form action="/action_page.php" method="post">
+Notes on GET:
+Form data is appended to the URL.
+Never use GET for sensitive data (visible in the URL).
+URL length is limited to 2048 characters.
+Useful for bookmarking results.
+Notes on POST:
+Form data is sent in the request body (not visible in the URL).
+No size limitations; suitable for large data.
+Form submissions using POST cannot be bookmarked.
+Tip: Always use POST for sensitive or personal information.
+
+The autocomplete Attribute
+The autocomplete attribute defines whether the browser should automatically complete input fields based on previous entries. It can be set to "on" or "off".
+
+Example:
+A form with autocomplete enabled:
+
+
+
+<form action="/action_page.php" autocomplete="on">
+The novalidate Attribute
+The novalidate attribute is a boolean attribute. When present, it prevents the form from validating input before submitting.
+
+Example:
+A form that skips input validation:
+
+
+
+<form action="/action_page.php" novalidate>
+List of All <form> Attributes
+Attribute	Description
+accept-charset	Specifies character encodings for form submission
+action	Specifies where to send the form data
+autocomplete	Turns autocomplete on or off
+enctype	Specifies encoding for form data when using POST
+method	Specifies the HTTP method for sending form data
+name	Specifies the name of the form
+novalidate	Prevents form validation before submission
+rel	Specifies the relationship between linked resources
+target	Specifies where to display the response after form submission

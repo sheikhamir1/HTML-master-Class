@@ -1,0 +1,122 @@
+Ordered HTML List:
+An ordered list is defined using the <ol> tag, and each list item is enclosed in an <li> tag. The default markers for an ordered list are numbers.
+
+Example: Ordered list with default numbers
+
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Ordered HTML List - Type Attribute:
+The type attribute of the <ol> tag defines the style of the list item marker. It can be numerical or alphabetical, either in uppercase or lowercase, as well as Roman numerals.
+
+Here are the possible values for the type attribute:
+
+type="1": Numbers (default)
+type="A": Uppercase letters
+type="a": Lowercase letters
+type="I": Uppercase Roman numerals
+type="i": Lowercase Roman numerals
+Example: Numbers (default)
+
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Example: Uppercase letters
+
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Example: Lowercase letters
+
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Example: Uppercase Roman numerals
+
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Example: Lowercase Roman numerals
+
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Control List Counting:
+You can control the starting point of an ordered list using the start attribute, which specifies the starting number.
+
+Example: Start counting from 50
+
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Nested HTML Lists:
+HTML lists can be nested inside other lists to create hierarchical structures. A list item (<li>) can contain another ordered or unordered list.
+
+Example: Nested ordered list
+
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+In this example, "Black tea" and "Green tea" are nested within the "Tea" list item.
+
+Chapter Summary:
+The <ol> element is used to define an ordered list.
+Use the type attribute to define the type of numbering (e.g., numbers, letters, Roman numerals).
+The <li> element defines each item in the list.
+Ordered lists can be nested inside other lists.
+The start attribute can be used to control the starting number of the list.
+
+
+
+HTML Description Lists:
+HTML supports description lists, which are used to group a list of terms along with their corresponding descriptions.
+
+The <dl> tag is used to define the description list.
+The <dt> tag defines the term (or name) in the description list.
+The <dd> tag provides the description of the term.
+Example: Description list for Coffee and Milk
+html
+Copy code
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+In this example:
+
+"Coffee" is the term, and "- black hot drink" is its description.
+"Milk" is the term, and "- white cold drink" is its description.
+Chapter Summary:
+The <dl> element is used to define a description list.
+The <dt> element is used to define the description term.
+The <dd> element describes the term in a description list.

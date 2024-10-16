@@ -1,0 +1,74 @@
+What is JavaScript in HTML?
+JavaScript is used to make HTML pages more dynamic and interactive.
+Common uses of JavaScript include changing content, image manipulation, form validation, and dynamic styling of HTML elements.
+The HTML <script> Tag
+The HTML <script> tag is used to include or define a JavaScript script.
+It can either contain JavaScript code directly within the <script> tag or reference an external JavaScript file using the src attribute.
+Example: JavaScript to Display Date and Time
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+  Click me to display Date and Time
+</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+
+JavaScript for Element Selection
+JavaScript often selects HTML elements using the document.getElementById() method to manipulate or change content.
+Example: Changing Content with JavaScript
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+In this example, the JavaScript code finds the HTML element with id="demo" and replaces its content with "Hello JavaScript!".
+
+A Taste of JavaScript
+Here are a few examples of what JavaScript can do:
+
+1. Changing Content:
+JavaScript can modify the content of HTML elements.
+
+
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+2. Changing Styles:
+JavaScript can change CSS styles dynamically.
+
+
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+3. Changing Attributes:
+JavaScript can update the attributes of HTML elements, such as the src attribute of an image.
+
+
+document.getElementById("image").src = "picture.gif";
+The HTML <noscript> Tag
+The <noscript> tag defines alternative content for users who have disabled JavaScript in their browsers or for browsers that do not support JavaScript.
+Example: Using <noscript>
+
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+If JavaScript is disabled or not supported, the message "Sorry, your browser does not support JavaScript!" will be shown.
+
+HTML Script Tags Overview
+Tag	Description
+<script>	Defines a client-side JavaScript script
+<noscript>	Defines content for users who do not support scripts
+
+Chapter Summary
+JavaScript makes HTML dynamic and interactive.
+JavaScript is included using the <script> tag, and alternative content is provided with <noscript>.
+JavaScript can change content, styles, and attributes of HTML elements.
+The document.getElementById() method is used to select elements by their id for manipulation.

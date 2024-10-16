@@ -1,0 +1,277 @@
+HTML input Type 
+
+1. <input type="button">
+Defines a button that can trigger a JavaScript action.
+
+Example:
+
+html
+Copy code
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+2. <input type="checkbox">
+Allows users to select zero or more options.
+
+Example:
+
+html
+Copy code
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">I have a car</label>
+</form>
+
+3. <input type="color">
+Defines an input field for a color value.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+
+4. <input type="date">
+Allows users to select a date.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+
+5. <input type="datetime-local">
+Defines a date and time input field without a time zone.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+
+6. <input type="email">
+Specifies an input field for email addresses.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+</form>
+
+7. <input type="file">
+Creates a file-select field and a "Browse" button.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+
+
+8. <input type="hidden">
+Defines a hidden input field (invisible to users).
+
+Example:
+
+html
+Copy code
+<form>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+
+
+9. <input type="image">
+Uses an image as the submit button.
+
+Example:
+
+html
+Copy code
+<form>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+10. <input type="month">
+Allows users to select a month and year.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+
+11. <input type="number">
+Defines a numeric input field, with optional restrictions.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="quantity">Quantity (1-5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+
+12. <input type="password">
+Defines a password input field where the characters are masked.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd">
+</form>
+
+13. <input type="radio">
+Defines a radio button that allows only one selection.
+
+Example:
+
+html
+Copy code
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label>
+</form>
+
+
+14. <input type="range">
+Defines a range slider input.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="vol">Volume (0-50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+
+15. <input type="reset">
+Creates a reset button that resets the form values.
+
+Example:
+
+html
+Copy code
+<form>
+  <input type="text" id="fname" name="fname" value="John">
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+16. <input type="search">
+Defines a search field.
+
+Example:
+
+html
+Copy code
+
+<form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</form>
+
+17. <input type="submit">
+Defines a button to submit the form.
+
+Example:
+
+html
+Copy code
+<form action="/action_page.php">
+  <input type="submit" value="Submit">
+</form>
+
+18. <input type="tel">
+Defines a field for entering a telephone number.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+
+19. <input type="text">
+Defines a single-line text input field.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+</form>
+
+
+20. <input type="time">
+Defines an input field for selecting a time.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+
+21. <input type="url">
+Defines an input field for entering a URL.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+
+22. <input type="week">
+Defines a field for selecting a week and year.
+
+Example:
+
+html
+Copy code
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+</form>
+These examples showcase the various input types in HTML forms that allow different kinds of user input or interaction.
+
+
+
+
+
+

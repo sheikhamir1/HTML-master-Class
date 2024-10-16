@@ -1,0 +1,60 @@
+HEX color values allow you to define colors using hexadecimal (base 16) values. The format #RRGGBB is used, where:
+
+RR represents the red component
+GG represents the green component
+BB represents the blue component
+Each component (RR, GG, BB) is a hexadecimal number between 00 (decimal 0) and ff (decimal 255). This provides over 16 million color possibilities.
+
+1. HEX Color Values
+Red: #ff0000 sets the red component to its maximum (ff), while green and blue are set to 0 (00), producing pure red.
+Green: #00ff00 maximizes green, resulting in a pure green color.
+Blue: #0000ff maximizes the blue component.
+Key Examples:
+
+#000000 produces black because all values are set to 00.
+#ffffff produces white with all values set to ff.
+
+Examples:
+
+<h1 style="color:#ff0000;">This is Red</h1>
+<h1 style="color:#00ff00;">This is Green</h1>
+<h1 style="color:#0000ff;">This is Blue</h1>
+<h1 style="color:#3cb371;">This is Medium Sea Green</h1>
+<h1 style="color:#ee82ee;">This is Violet</h1>
+<h1 style="color:#ffa500;">This is Orange</h1>
+<h1 style="color:#6a5acd;">This is Slate Blue</h1>
+
+2. Shades of Gray
+Shades of gray are created by setting the red, green, and blue components to the same hexadecimal value.
+
+Examples:
+<h1 style="color:#404040;">Shade of Gray - 40</h1>
+<h1 style="color:#686868;">Shade of Gray - 68</h1>
+<h1 style="color:#a0a0a0;">Shade of Gray - a0</h1>
+<h1 style="color:#bebebe;">Shade of Gray - be</h1>
+<h1 style="color:#dcdcdc;">Shade of Gray - dc</h1>
+<h1 style="color:#f8f8f8;">Shade of Gray - f8</h1>
+
+3. Mixing HEX Colors
+Each color component can be customized using hexadecimal values to create unique color combinations.
+
+For example:
+
+Color: #ff6247 mixes red (ff), green (62), and blue (47) to create a reddish-orange shade.
+Examples:
+
+<h1 style="background-color:#ff6247;">This is a reddish-orange color</h1>
+<h1 style="background-color:#3cb371;">This is Medium Sea Green</h1>
+<h1 style="background-color:#ee82ee;">This is Violet</h1>
+<h1 style="background-color:#ffa500;">This is Orange</h1>
+<h1 style="background-color:#6a5acd;">This is Slate Blue</h1>
+
+
+Chapter Summary
+HEX Colors: Specify colors using a #RRGGBB format, where each pair represents the intensity of red, green, or blue.
+Shades of Gray: Created by using the same value for red, green, and blue (e.g., #a0a0a0).
+Custom Colors: Mix different values for red, green, and blue to create unique colors (e.g., #ff6247).
+Example Combined
+
+
+This combined example demonstrates the use of HEX values to define standard colors, shades of gray, and custom mixed colors.

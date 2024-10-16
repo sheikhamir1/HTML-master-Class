@@ -1,0 +1,217 @@
+Basic Questions
+What does HTML stand for?
+
+HyperText Markup Language.
+What is the purpose of HTML?
+
+HTML is used to structure content on the web by defining elements such as headings, paragraphs, links, images, and other types of media.
+What are the main components of an HTML document?
+
+The main components include the <!DOCTYPE>, <html>, <head>, and <body> tags.
+What is the difference between HTML and XHTML?
+
+XHTML is a stricter and cleaner version of HTML that follows XML rules. It requires all elements to be properly nested and closed.
+What are semantic elements in HTML?
+
+Semantic elements provide meaning to the web content, such as <header>, <footer>, <article>, and <section>.
+Structure and Tags
+What is the basic structure of an HTML document?
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Title</title>
+    </head>
+    <body>
+        <h1>Hello, World!</h1>
+    </body>
+</html>
+What are block-level and inline elements? Give examples.
+
+Block-level elements take up the full width and start on a new line (e.g., <div>, <h1>). Inline elements do not start on a new line (e.g., <span>, <a>).
+What are the different types of lists in HTML?
+
+Ordered lists (<ol>), unordered lists (<ul>), and definition lists (<dl>).
+How do you create a table in HTML?
+
+html
+Copy code
+<table>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+</table>
+What is the use of the <div> and <span> tags?
+
+<div> is used for block-level grouping, while <span> is used for inline grouping.
+Attributes
+What are HTML attributes? Give examples.
+
+Attributes provide additional information about an element. For example, <a href="https://example.com">Link</a> where href is an attribute.
+What is the difference between class and id attributes?
+
+class is used for multiple elements, while id is unique to a single element.
+How do you add a title to an HTML document?
+
+Using the <title> tag within the <head> section.
+What is the purpose of the alt attribute in images?
+
+The alt attribute provides alternative text for images, improving accessibility and SEO.
+Forms and Input
+How do you create a form in HTML?
+
+html
+Copy code
+<form action="/submit" method="post">
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+</form>
+What are the different input types available in HTML5?
+
+text, password, email, url, tel, number, range, date, file, and more.
+How do you create a dropdown list in HTML?
+
+html
+Copy code
+<select>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+</select>
+What is the purpose of the <label> tag in forms?
+
+The <label> tag associates a text label with a form element, improving accessibility.
+Links and Media
+How do you create hyperlinks in HTML?
+
+html
+Copy code
+<a href="https://example.com">Visit Example</a>
+What are the different types of links (absolute vs. relative)?
+
+Absolute links include the full URL (e.g., https://example.com/page), while relative links point to a path relative to the current page (e.g., /page).
+How do you embed audio and video in HTML?
+
+html
+Copy code
+<audio src="audio.mp3" controls></audio>
+<video src="video.mp4" controls></video>
+What is the <iframe> tag used for?
+
+The <iframe> tag is used to embed another HTML page within the current page.
+HTML5 Features
+What are some new features introduced in HTML5?
+
+New semantic elements, multimedia support (audio/video), the <canvas> element, and local storage.
+What is the <canvas> element?
+
+The <canvas> element is used to draw graphics on the fly via JavaScript.
+How do you implement local storage in HTML5?
+
+Using the localStorage API, e.g., localStorage.setItem('key', 'value');.
+What are the advantages of using HTML5 over previous versions?
+
+Improved semantics, better multimedia support, enhanced APIs, and better performance.
+Accessibility and Best Practices
+What are some best practices for writing semantic HTML?
+
+Use proper semantic tags (e.g., <header>, <nav>), provide alternative text for images, and ensure proper heading structure.
+How do you ensure your HTML is accessible?
+
+Use semantic HTML, provide alt attributes, ensure contrast and readability, and use ARIA roles when necessary.
+What is ARIA and how does it relate to HTML?
+
+ARIA (Accessible Rich Internet Applications) provides additional attributes to enhance accessibility for complex web applications.
+Advanced Topics
+What is the Document Object Model (DOM)?
+
+The DOM is a programming interface for web documents, allowing scripts to manipulate the structure and style of a document.
+How can you manipulate HTML with JavaScript?
+
+Using methods like getElementById(), createElement(), and appendChild() to interact with and modify HTML elements.
+What is the purpose of the <meta> tag?
+
+The <meta> tag provides metadata about the HTML document, such as character set, author, and viewport settings.
+How do you specify the character encoding for an HTML document?
+
+Using the <meta charset="UTF-8"> tag in the <head> section.
+SEO and Performance
+How does HTML structure affect SEO?
+
+Properly structured HTML with semantic tags helps search engines understand content hierarchy, improving indexing.
+What are some HTML best practices for improving page load speed?
+
+Minimize HTML size, use efficient coding, optimize images, and leverage browser caching.
+Browser Compatibility
+What is the purpose of the DOCTYPE declaration?
+
+The DOCTYPE declaration specifies the HTML version and helps browsers render the document correctly.
+How do you ensure cross-browser compatibility for your HTML?
+
+Test in multiple browsers, use valid HTML, and avoid deprecated tags and attributes.
+Troubleshooting and Debugging
+What are common HTML validation tools?
+
+W3C Markup Validation Service, HTML Tidy, and browser developer tools.
+How do you troubleshoot layout issues in HTML?
+
+Inspect elements using developer tools, check for missing tags or incorrect nesting, and validate HTML.
+Miscellaneous
+What is the difference between GET and POST methods in forms?
+
+GET appends data to the URL and is suitable for non-sensitive data, while POST sends data in the request body, suitable for sensitive information.
+How do you create a comment in HTML?
+
+html
+Copy code
+<!-- This is a comment -->
+What is the role of the <head> section in an HTML document?
+
+The <head> section contains meta-information about the document, including the title, links to stylesheets, and scripts.
+How do you include external CSS and JavaScript files in HTML?
+
+html
+Copy code
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+What is the difference between the <link> and <script> tags?
+
+<link> is used to link external resources like stylesheets, while <script> is used to include JavaScript files.
+Practical Application
+Can you create a simple HTML page structure from scratch?
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Page</title>
+    </head>
+    <body>
+        <h1>Welcome to My Page</h1>
+        <p>This is a simple HTML page.</p>
+    </body>
+</html>
+How would you implement a responsive design using HTML?
+
+Use semantic HTML structure combined with CSS media queries to adapt layout based on screen size.
+Current Trends
+What are some common frameworks that work with HTML?
+
+Bootstrap, Foundation, Tailwind CSS, and various JavaScript frameworks like React and Vue.js.
+How has HTML evolved with the introduction of CSS and JavaScript frameworks?
+
+HTML has become more semantic, while CSS and JavaScript frameworks provide powerful tools for styling and functionality, leading to more interactive web applications.
+Wrap-Up
+What resources do you recommend for learning more about HTML?
+
+MDN Web Docs, W3Schools, freeCodeCamp, and various online courses on platforms like Coursera or Udemy.
+Can you describe a project where you used HTML extensively?
+
+(This answer is subjective and should be personalized based on your experience.)

@@ -1,0 +1,43 @@
+HTML paragraphs are blocks of text that always start on a new line, with automatic spacing added by browsers before and after them.
+
+1. Paragraph Example
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+The <p> element defines a paragraph.
+
+2. Display & Spacing
+Extra spaces or lines in the HTML code are ignored by browsers. The browser condenses the content into a single line.
+<p>
+This paragraph contains     extra spaces and lines,
+but the browser ignores them.
+</p>
+
+3. Horizontal Rules (<hr>)
+The <hr> tag defines a horizontal rule (thematic break) to separate content and indicate a change.
+<h1>Heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>Heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+<hr> is an empty tag with no closing tag.
+
+4. Line Breaks (<br>)
+The <br> element creates a line break without starting a new paragraph.
+<p>This is<br>a paragraph<br>with line breaks.</p>
+<br> is also an empty tag without a closing tag.
+
+5. Preformatted Text (<pre>)
+The <pre> element preserves spaces and line breaks, displaying text in a fixed-width font.
+<pre>
+  My Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+  Oh, bring back my Bonnie to me.
+</pre>
+
+
+Tag Reference:
+<p>: Defines a paragraph.
+<hr>: Defines a thematic break (horizontal rule).
+<br>: Inserts a line break.
+<pre>: Defines preformatted text that preserves spaces and line breaks.

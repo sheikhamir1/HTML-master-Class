@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class27</title>
+    <!-- <style>
+      /* h1 {
+        background-color: aqua;
+        color: black;
+      } */
+      .first {
+        background-color: aqua;
+        color: black;
+        text-align: center;
+        font-size: 45px;
+      }
+      .second {
+        background-color: pink;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style> -->
+    <style>
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      .cityName {
+        font-size: 14px;
+        color: rgb(73, 73, 187);
+      }
+      .london {
+        color: black;
+      }
+      .japan {
+        color: green;
+      }
+      .paris {
+        color: crimson;
+      }
+      .newCss {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 class="first">heading</h1>
+    <h1 class="second">this is sub-heading</h1>
+    <div>i am good div</div>
+
+    <hr /> -->
+
+    <div class="city">
+      <h2 class="cityName newCss">London</h2>
+      <p class="london">London is the capital of England.</p>
+    </div>
+
+    <div class="city new2">
+      <h2 class="cityName">Paris</h2>
+      <p class="paris">Paris is the capital of France.</p>
+    </div>
+
+    <div class="city">
+      <h2 class="cityName">Tokyo</h2>
+      <p class="Japan">Tokyo is the capital of Japan.</p>
+    </div>
+
+    <button onclick="myFunction()">Hide Cities</button>
+    <script>
+      function myFunction() {
+        let x = document.getElementsByClassName("new2");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

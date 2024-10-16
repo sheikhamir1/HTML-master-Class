@@ -1,0 +1,86 @@
+HTML Links - Hyperlinks:
+Links are essential for navigating web pages and are represented by hyperlinks.
+You can click on a hyperlink to jump to another document or page.
+Links can be applied to text, images, or other HTML elements.
+HTML Link Syntax:
+The basic syntax for creating a hyperlink in HTML uses the <a> tag:
+
+
+<a href="url">link text</a>
+href: The most important attribute, defining the URL or location of the link destination.
+Link Text: The clickable part, visible to users.
+
+Example:
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+Unvisited link: Blue and underlined.
+Visited link: Purple and underlined.
+Active link: Red and underlined.
+HTML Links - The target Attribute:
+
+By default, clicking a link opens the page in the same window/tab. Use the target attribute to change this behavior.
+
+Common values for target:
+
+_self: Default, opens the link in the same window.
+_blank: Opens the link in a new tab/window.
+_parent: Opens the link in the parent frame.
+_top: Opens the link in the entire window.
+
+Example:
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+Absolute URLs vs. Relative URLs:
+Absolute URL: The full web address, starting with "https://".
+Relative URL: A shorter path, linking to files within the same website.
+
+Examples:
+
+<!-- Absolute URL -->
+<a href="https://www.google.com/">Google</a>
+
+<!-- Relative URL -->
+<a href="/html_images.asp">HTML Images</a>
+Use an Image as a Link:
+You can use an image as a clickable link by embedding an <img> tag inside an <a> tag.
+
+Example:
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+Link to an Email Address:
+Using the mailto: scheme inside the href attribute, you can create a link that opens the user's default email program.
+
+Example:
+
+<a href="mailto:someone@example.com">Send email</a>
+
+Button as a Link:
+You can make a button function as a link by adding JavaScript to the button’s onclick event.
+
+Example:
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+Link Titles:
+The title attribute specifies extra information, often shown as a tooltip when you hover over the link.
+
+Example:
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+More on Absolute and Relative URLs:
+Example (Absolute URL):
+
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+Example (Relative URL - page in the same folder):
+
+<a href="default.asp">HTML tutorial</a>
+
+Chapter Summary:
+Use the <a> tag to define hyperlinks.
+Use the href attribute to specify the link’s destination.
+Use the target attribute to control where the link opens.
+Images and buttons can also be used as links.
+Use mailto: to link to an email address.

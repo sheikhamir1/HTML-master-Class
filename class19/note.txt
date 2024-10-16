@@ -1,0 +1,119 @@
+Introduction:
+HTML tables can include headers for both rows and columns. Headers are defined using the <th> element, which stands for table header.
+
+Defining Table Headers:
+Headers in HTML tables are defined using the <th> element. Each <th> element represents a header cell, which typically appears in the first row of a table.
+
+Example:
+Creating headers for columns:
+
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+In this example, "Firstname," "Lastname," and "Age" are column headers.
+
+Vertical Table Headers:
+You can use the first column as a set of headers by placing the <th> element in the first cell of each row.
+
+Example:
+Creating headers for rows:
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+
+Here, the first column serves as the header, with "Firstname," "Lastname," and "Age" acting as row headers.
+
+Aligning Table Headers:
+By default, table headers are bold and centered. You can modify this alignment using CSS.
+
+Example:
+Left-aligning table headers:
+
+
+th {
+  text-align: left;
+}
+This CSS will align the text in all header cells to the left.
+
+Header for Multiple Columns:
+A header can span across two or more columns using the colspan attribute in the <th> element.
+
+Example:
+Header spanning two columns:
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+In this example, "Name" spans two columns, with "Firstname" and "Lastname" under it.
+
+Table Caption:
+A caption can be added to a table to serve as a heading for the entire table. The <caption> tag is placed directly after the opening <table> tag.
+
+Example:
+Adding a caption to a table:
+
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+In this example, "Monthly savings" is the table's caption.
+
+By using the <th> element and features like colspan and <caption>, you can create well-structured and accessible tables in HTML.

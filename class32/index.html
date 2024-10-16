@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class32</title>
+    <style>
+      .left,
+      .right {
+        float: left;
+        width: 20%;
+      }
+
+      .main {
+        float: left;
+        width: 60%;
+      }
+
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color: crimson; color: white; text-align: center">
+      learning responsive Image
+    </h1>
+    <img
+      src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/813b6ff4-ca88-42b0-bfb6-85d3f01d6014/width=450/1.jpeg"
+      alt="pokemon"
+      style="max-width: 100%; height: auto"
+    />
+    <p class="left">i am left class</p>
+    <p class="right">i am right class</p>
+    <h1 class="main">i am main</h1>
+  </body>
+</html>

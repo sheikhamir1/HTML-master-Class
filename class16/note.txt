@@ -1,0 +1,86 @@
+Introduction:
+HTML tables allow web developers to organize and present data in rows and columns. They are useful for displaying structured information clearly and concisely.
+
+Example of an HTML Table:
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+This table lists company names, their contacts, and their respective countries.
+
+Defining an HTML Table:
+An HTML table is composed of table cells, arranged into rows and columns.
+
+Each row is defined by the <tr> (table row) element.
+Each cell is defined by the <td> (table data) element, where the actual content is placed.
+
+Example of Table Cells:
+
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+
+Note: Table cells can hold any HTML element such as text, images, lists, links, or even another table.
+Table Rows:
+Each row in an HTML table begins with <tr> and ends with </tr>.
+
+Example of Table Rows:
+
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+You can add as many rows as needed, ensuring that each row has the same number of cells for a uniform table structure.
+
+Table Headers:
+Table headers are used to define column headings, and are represented using the <th> element instead of <td>. Header cells are often bold and centered by default.
+
+Example of Table Headers:
+
+<table>
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+Note: The default style for <th> includes bold text that is centered. This can be customized using CSS.
